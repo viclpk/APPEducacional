@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="camera_preview" type="id" />
+    <item name="camera_preview2" type="id">camera_preview2</item>
+</resources>

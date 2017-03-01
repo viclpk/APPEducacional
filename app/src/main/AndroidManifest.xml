@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.akexorcist.bluetoothspp">
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".Letras.SalvaPalavra"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="Lolli"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Main"
+            android:label="Lolli">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TerminalActivity"
+            android:label="@string/title_activity_terminal"
+            android:launchMode="singleTop" />
+        <activity android:name=".CameraActivity2" />
+        <activity android:name=".Letras.OcrCaptureActivity" />
+        <activity android:name=".Letras.Jogo" />
+        <activity android:name=".Letras.Resultado" />
+        <activity android:name=".Matematica.JogoMat" />
+        <activity android:name=".Jogos" />
+        <activity android:name=".Bichos.JogoBichos">
+        </activity>
+    </application>
+
+</manifest>
